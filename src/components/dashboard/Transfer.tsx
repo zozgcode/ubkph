@@ -12,7 +12,7 @@ import Loader from '../Loader';
 interface Bks {
   id: number;
   name: string;
-  logo: string;
+  // logo: string;
 }
 
 interface FormErrors {
@@ -106,8 +106,8 @@ export default function Transfer() {
     if (step === 1) {
       if (!formData.routingNumber) {
         errors.routingNumber = 'Account number is required';
-      } else if (formData.routingNumber.length !== 8) {
-        errors.routingNumber = 'Account number must be 8 digits';
+      } else if (formData.routingNumber.length < 10 || formData.routingNumber.length > 14) {
+        errors.routingNumber = 'Account number must be between 10 and 14 digits';
       }
       if (!formData.selectedBank) errors.selectedBank = 'Bank selection is required';
     } else if (step === 2) {
@@ -145,10 +145,10 @@ export default function Transfer() {
                 {errors.selectedBank && <p className="text-red-500 text-sm">{errors.selectedBank}</p>}
               </div>
               <div className="flex items-center justify-between gap-20">
-                <Link href="/dashboard" className="max-w-max flex items-center justify-center rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#d71e28] text-white">
+                <Link href="/dashboard" className="max-w-max flex items-center justify-center rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#FF8000] text-white">
                   Cancel
                 </Link>
-                <button type="button" className="w-full rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#d71e28] text-white" onClick={handleNext}>
+                <button type="button" className="w-full rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#FF8000] text-white" onClick={handleNext}>
                   Next
                 </button>
               </div>
@@ -160,7 +160,7 @@ export default function Transfer() {
               <div className="mb-3">
                 <span className="">Transfer From</span>
                 <div className="flex gap-2 mt-2">
-                  <div className="rounded-lg flex items-center justify-center w-[35px] h-[35px] bg-[#d71e28] text-white">WF</div>
+                  <div className="rounded-lg flex items-center justify-center w-[35px] h-[35px] bg-[#FF8000] text-white">WF</div>
                   <div className="flex flex-col gap-1">
                     <span className="uppercase">
                       {user.holder.firstName} {user.holder.lastName}
@@ -174,7 +174,7 @@ export default function Transfer() {
                   <label htmlFor="" className="text-[#2e2e2e] text-sm">
                     Amount
                   </label>
-                  <button className="absolute text-[#888888] w-[50px] min-h-[50px] border-r left-0 text-lg bottom-[2px]">£</button>
+                  <button className="absolute text-[#888888] w-[50px] min-h-[50px] border-r left-0 text-lg bottom-[2px]">₱</button>
                   <input
                     type="number"
                     name="amount"
@@ -199,10 +199,10 @@ export default function Transfer() {
                 />
               </div>
               <div className="flex items-center justify-between gap-20">
-                <Link href="/dashboard" className="max-w-max flex items-center justify-center rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#d71e28] text-white">
+                <Link href="/dashboard" className="max-w-max flex items-center justify-center rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#FF8000] text-white">
                   Cancel
                 </Link>
-                <button type="button" className="w-full rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#d71e28] text-white" onClick={handleNext}>
+                <button type="button" className="w-full rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#FF8000] text-white" onClick={handleNext}>
                   Proceed
                 </button>
               </div>
@@ -233,10 +233,10 @@ export default function Transfer() {
                 {loading ? '' : errors.transCode && <p className="text-red-500 text-center text-sm">{errors.transCode}</p>}
               </div>
               <div className="flex items-center justify-between gap-20">
-                <Link href="/dashboard" className="max-w-max flex items-center justify-center rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#d71e28] text-white">
+                <Link href="/dashboard" className="max-w-max flex items-center justify-center rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#FF8000] text-white">
                   Cancel
                 </Link>
-                <button type="submit" className="w-full rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#d71e28] text-white">
+                <button type="submit" className="w-full rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#FF8000] text-white">
                   {loading ? 'Loading...' : 'Transfer'}
                 </button>
               </div>

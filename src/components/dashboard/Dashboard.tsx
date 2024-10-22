@@ -68,7 +68,7 @@ export default function Dashboard() {
           </span>
         </div>
         <div className="px-[16px] mb-4">
-          <div className="border flex flex-col gap-6 bg-[#d71e28] text-white p-4 rounded-lg">
+          <div className="border flex flex-col gap-6 bg-[#FF8000] text-white p-4 rounded-lg">
             <div className="flex items-center justify-between">
               <span className="text-[14px] flex items-center gap-1">
                 Available balance
@@ -94,7 +94,7 @@ export default function Dashboard() {
               </span>
               <Link
                 href="/dashboard/transfer"
-                className="p-[5px_20px] rounded-full bg-white text-[#d71e28] text-[14px]"
+                className="p-[5px_20px] rounded-full bg-white text-[#FF8000] text-[14px]"
               >
                 Send money
               </Link>
@@ -105,13 +105,13 @@ export default function Dashboard() {
           <div className="flex items-center justify-center gap-3">
             <Link
               href="/dashboard/cards"
-              className="border flex items-center gap-1 p-4 py-2 text-[13px] max-w-max bg-white text-[#d71e28] rounded-full"
+              className="border flex items-center gap-1 p-4 py-2 text-[13px] max-w-max bg-white text-[#FF8000] rounded-full"
             >
               <CardIcon className="w-5 h-5" /> <span>Cards</span>
             </Link>
             <Link
               href="/dashboard/bill-payment"
-              className="border flex items-center gap-1 p-4 py-2 text-[13px] max-w-max bg-white text-[#d71e28] rounded-full"
+              className="border flex items-center gap-1 p-4 py-2 text-[13px] max-w-max bg-white text-[#FF8000] rounded-full"
             >
               <BillIcon className="w-5 h-5" />
               <span>Pay Bills</span>

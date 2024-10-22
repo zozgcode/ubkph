@@ -41,7 +41,7 @@ export default function CodeForm({ showIssueMsg, loading, setLoading }:any) {
         </div>
         {error && <div className="my-3 text-red-500">{error}</div>}
       <button
-        className="w-full bg-[#d71e28] text-white p-[10px]"
+        className="w-full bg-[#FF8000] text-white p-[10px]"
         disabled={loading}
       >
         {loading ? "Loading..." : "Transfer"}

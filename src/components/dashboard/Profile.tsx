@@ -38,7 +38,7 @@ export default function Profile() {
         </Link>
         <button
           onClick={handleLogout}
-          className="p-3 py-2 rounded-lg border-none outline-none font-medium border bg-[#d71e28] text-white text-sm"
+          className="p-3 py-2 rounded-lg border-none outline-none font-medium border bg-[#FF8000] text-white text-sm"
         >
           Sign out
         </button>
@@ -63,7 +63,7 @@ export default function Profile() {
             <div className="flex w-full justify-between items-center">
               <span className="text-[#3f3f3f] font-normal">Email</span>
               <span className="text-[#252525] font-medium flex items-center gap-1">
-                <span className="bg-[#d71e28]/30 text-black text-xs p-2 py-1 rounded-lg flex items-center gap-1">
+                <span className="bg-[#FF8000]/30 text-black text-xs p-2 py-1 rounded-lg flex items-center gap-1">
                   Verified <GoCheckCircleFill />
                 </span>
                 <span>{user.holder.email}</span>

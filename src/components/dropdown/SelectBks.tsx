@@ -11,7 +11,7 @@ interface Bks {
   id: number;
   name: string;
   resize?: boolean;
-  logo: string;
+  // logo: string;
 }
 
 interface SelectBksProps {

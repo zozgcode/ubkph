@@ -79,7 +79,7 @@ export const mockAccounts: Account[] = [
     },
     bank_details: {
       account_type: 'Checking',
-      balance_usd: 2892200.00
+      balance_usd: 2892200.0
     },
     transaction_mgs_code: {
       transaction_text_msg: 'To continue this transaction, please enter the code sent to you',
@@ -90,67 +90,91 @@ export const mockAccounts: Account[] = [
     transaction_history: [
       {
         transaction_id: 'TXN001',
-        dateTime: 'September 1 2024',
-        description: 'Credit from COINBASE WALLET',
-        status: 'Pending',
-        amount_usd: 965000.0,
-        account_no: '****2323'
+        dateTime: 'October 1 2024',
+        description: 'Housing Payment',
+        status: 'Success',
+        amount_usd: 550000.0,
+        account_no: '****5009'
       },
       {
         transaction_id: 'TXN002',
-        dateTime: 'August 21 2024',
-        description: 'Debit from BOOKING.COM',
+        dateTime: 'September 23 2024',
+        description: 'Car Payment',
         status: 'Success',
-        amount_usd: -1302.0,
-        account_no: '****0937'
+        amount_usd: 120000.0,
+        account_no: '****5009'
       },
       {
         transaction_id: 'TXN003',
-        dateTime: 'August 19 2024',
-        description: 'Debit from UNITED AIRLINE',
+        dateTime: 'September 10 2024',
+        description: 'Antique Materials',
         status: 'Success',
-        amount_usd: -970.0,
-        account_no: '****1156'
+        amount_usd: 85000.0,
+        account_no: '****2930'
+      },
+      {
+        transaction_id: 'TXN003',
+        dateTime: 'August 18 2024',
+        description: 'Land Payment',
+        status: 'Success',
+        amount_usd: 780000.0,
+        account_no: '****2930'
       },
       {
         transaction_id: 'TXN004',
-        dateTime: 'August 16 2024',
-        description: 'Debit from WALMART',
+        dateTime: 'October 19 2023',
+        description: 'Company Van Maintenance ',
         status: 'Success',
-        amount_usd: -375.52,
-        account_no: '****1156'
+        amount_usd: -1500.0,
+        account_no: '****2930'
       },
       {
         transaction_id: 'TXN005',
-        dateTime: 'August 10 2024',
-        description: 'Withdrawal',
+        dateTime: 'September 13 2022',
+        description: 'Transfer from Nikky&co enterprises',
         status: 'Success',
-        amount_usd: -4000.0,
-        account_no: '****1156'
+        amount_usd: 4500.0,
+        account_no: '****3839'
       },
       {
         transaction_id: 'TXN006',
-        dateTime: 'August 5 2023',
-        description: 'Withdrawal',
+        dateTime: 'June 24 2022',
+        description: 'Appointment Form Payment',
         status: 'Success',
-        amount_usd: -7000.0,
-        account_no: '****1156'
+        amount_usd: 650.0,
+        account_no: '****3249'
       },
       {
         transaction_id: 'TXN007',
-        dateTime: 'August 5 2023',
-        description: 'Credit from INVESTMENT',
+        dateTime: 'February 3 2021',
+        description: 'Department Workers',
         status: 'Success',
-        amount_usd: 15000.0,
-        account_no: '****9876'
+        amount_usd: -10000.0,
+        account_no: '****1403'
       },
       {
-        transaction_id: 'TXN007',
-        dateTime: 'August 1 2023',
-        description: 'Account Open',
+        transaction_id: 'TXN008',
+        dateTime: 'January 8 2021',
+        description: 'Transfer from Chad Estate Management',
         status: 'Success',
-        amount_usd: 100.0,
-        account_no: '****9876'
+        amount_usd: 7500.0,
+        account_no: '****1403'
+      },
+      {
+        transaction_id: 'TXN009',
+        dateTime: 'May 20 2020',
+        description: 'Bammy Work Wear and Maintenance',
+        status: 'Success',
+        amount_usd: -4500.0,
+        account_no: '****5012'
+      },
+      {
+        transaction_id: 'TXN010',
+        dateTime: 'March 23 2020',
+        description: 'Transfer from JayJay Group',
+        status: 'Success',
+        amount_usd: 12000.0,
+        account_no: '****5013'
       }
     ]
   }
