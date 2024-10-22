@@ -36,20 +36,6 @@ export default function Login() {
       <Header />
       <div className="h-screen bg-[#F3F3F3] px-4">
         <div className="bg-transparent mx-auto shadow-sm rounded-lg py-7 px-5">
-          <div className="bg-[#FCE4CA] flex flex-col gap-2 rounded-[8px] p-4 mb-[40px]">
-            <div className="flex items-center gap-2">
-              <Image src="https://i.imgur.com/d3sTwpn.png" width={28} height={28} className="w-[35px]" alt="dddd" />
-              <div className="flex flex-col gap-2 ">
-                <p>Cybersure</p>
-                <p>Ensure that your browser shows verified URL.</p>
-              </div>
-            </div>
-
-            <div className="rounded-[8px] flex items-center gap-2 mb-3 bg-white p-2 mt-3">
-              <Image src="https://i.imgur.com/UzpTumF.png" width={28} height={28} className="w-[35px]" alt="dddd" />
-              <p>https://online.unionbankph.com</p>
-            </div>
-          </div>
 
           <div className="mt-3">{error && <p className="text-base text-center mx-auto max-w-[200px] rounded-md flex items-center justify-center text-red-600">{error}</p>}</div>
 
